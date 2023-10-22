@@ -2,7 +2,7 @@ services:
 
   wordpress:
     image: wordpress
-    container_name: deratisation
+    container_name: peinture
     restart: always
     ports:
       - ${WORDPRESS_PORT}:80
@@ -16,7 +16,7 @@ services:
 
   db:
     image: mysql:5.7.28
-    container_name: db_deratisation
+    container_name: db_peinture
     ports:
       - "${MYSQL_PORT}:3306"
     environment:
